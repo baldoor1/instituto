@@ -137,6 +137,26 @@ section{
 	left: 0;
 	top: 0;
 }
+
+.bg-img1{
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+.bg-img1 div{
+	z-index: 1;
+	position: relative;
+}
+.bg-img1:after{
+	position: absolute;
+	content: '';
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	left: 0;
+	top: 0;
+}
+
 .section{
 	padding: 100px 0;
 }
@@ -201,16 +221,16 @@ section{
 	transition: all 0.3s ease-in-out;
 }
 .ubutia-btn:hover{
-	background-color: #51c2b9;
+	background-color: #e67432;
 	color: #fff;
 }
 .solid{
-	background-color: #51c2b9;
+	background-color: #e67432;
 	color: #fff;
 }
 .solid:hover{
 	background-color: #fff;
-	color: #51c2b9;
+	color: #e67432;
 }
 .small-btn{
 	padding: 10px 130px;
@@ -337,15 +357,22 @@ section{
 	min-height: 659px;
 }
 
+.header1{
+	background-image: url(../images/1.jpg);
+	height: 50vh;
+	position: relative;
+	min-height: 900px;
+}
+
 .intro-box{
-	height: 100vh;
+	height: 50vh;
 	display: table;
 	text-align: center;
 	width: 100%;
 }
 .intro{
 	display: table-cell;
-	vertical-align: 60px;
+	vertical-align: 10px;
 
 }
 .header h1{
@@ -365,6 +392,26 @@ section{
 	color: #fff;
 }
 .header .ubutia-btn:hover{
+	background-color: #fff;
+	color: #424242;
+}
+.header1 h1{
+	margin: 0;
+}
+.header1 h1, .header1 p{
+	color: #fff;
+	letter-spacing: 2px;
+}
+.header1 p{
+	font-size: 32px;
+	padding-top: 0;
+	padding-bottom: 40px;
+}
+.header1 .ubutia-btn{
+	border-color: #fff;
+	color: #fff;
+}
+.header1 .ubutia-btn:hover{
 	background-color: #fff;
 	color: #424242;
 }
