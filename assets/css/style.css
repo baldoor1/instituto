@@ -269,7 +269,7 @@ section{
 
 /*Navigation*/
 #menu-item{
-	transition: all 0.3s ease-in-out;
+	transition: all 0.1s ease-in-out;
 }
 .menu-item{
 	background-color: #1a1a1a;
@@ -292,7 +292,7 @@ section{
 	text-decoration: none;
 }
 .hide-menu{
-	margin-top: -377px;
+	margin-top: -265px;
 }
 .show-menu{
 	margin-top: 0;
@@ -332,7 +332,7 @@ section{
 /*Home page*/
 .header{
 	background-image: url(../images/1.jpg);
-	height: 100vh;
+	height: 50vh;
 	position: relative;
 	min-height: 659px;
 }
@@ -345,7 +345,8 @@ section{
 }
 .intro{
 	display: table-cell;
-	vertical-align: middle;
+	vertical-align: 60px;
+
 }
 .header h1{
 	margin: 0;
