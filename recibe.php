@@ -11,19 +11,18 @@
    <section>
        <article>
            <h2>Datos:</h2>
-           <?php
+             <?php
                $rut_alum = $_POST["rut_alum"];
                $id_nota = $_POST["id_nota"];
                $nom_alum = $_POST["nom_alum"];
-               $nom_carre = $_POST["nom_carre"];
-               $descripcion = $_POST["descripcion"];
-
+               $id_carre = $_POST["id_carre"];
+               
                echo "rut:  $rut_alum <br>";
                echo "id nota:  $id_nota <br>";
                echo "nombre alumno:  $nom_alum <br>";
-               echo "nombre carrera:  $nom_carre <br>";
-               echo "descripcion:  $descripcion <br>";
-           ?>
+               echo "id carrera:  $id_carre <br>"; 
+               
+           ?> 
        </article>
 
        <article>
@@ -47,7 +46,7 @@
        <article>
            <h2>Ingresar Datos:</h2>
            <?php
-               $sql = "insert into alumnos(rut_alum, id_nota, nom_alum, nom_carre, descripcion) values ('$rut_alum',$id_nota,'$nom_alum','$nom_carre','$descripcion')";
+               $sql = "insert into alumnos (rut_alum, id_nota, nom_alum, id_carre) values('$rut_alum',$id_nota,'$nom_alum',$id_carre);";
                /* Se realiza el ingreso [query($sql)] y se comprueba
                 si esta correcto */
                if ($conexion -> query($sql) == TRUE) {
@@ -60,6 +59,10 @@
 
        </article>
 
+       <article>
+           <button><a href="insertar.html">Volver</a></button>
+       </article>
+               
    </section>
 </body>
 </html>
