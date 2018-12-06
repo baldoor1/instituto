@@ -112,6 +112,8 @@ section{
 /*Helper class*/
 .mt80{
 	margin-top: 80px;
+	position: relative;
+	margin-left: 85px;
 }
 .mb80{
 	margin-bottom: 80px;
@@ -210,9 +212,9 @@ section{
 
 /*Button*/
 .ubutia-btn{
-	border-color: #51c2b9;
+	border-color: #080f0f46;
 	font-style: italic;
-	color: #51c2b9;
+	color: #080f0f46;
 	border-radius: 0;
 	letter-spacing: 3px;
 	padding: 15px 80px;
