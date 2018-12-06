@@ -29,8 +29,8 @@
            <h2>Conexion</h2>
            <?php
                $servidor = "localhost";
-               $usuario = "admin";
-               $pass = "root";
+               $usuario = "root";
+               $pass = "";
                #Nombre de la BD
                $nombreBD = "instituto";
                #se crea la conexion
@@ -42,10 +42,11 @@
                echo "Conexion Realizada con exito!";
            ?>
        </article>
-
+ 
        <article>
            <h2>Ingresar Datos:</h2>
            <?php
+               
                $sql = "insert into alumnos (rut_alum, id_nota, nom_alum, id_carre) values('$rut_alum',$id_nota,'$nom_alum',$id_carre);";
                /* Se realiza el ingreso [query($sql)] y se comprueba
                 si esta correcto */
