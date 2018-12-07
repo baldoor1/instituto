@@ -64,7 +64,7 @@ section{
 	transition: all 0.3s ease-in-out;
 }
 .form-control option{
-	color: #424242;
+	color: #000000;
 }
 .form-control .form{
 	border-radius: 0;
