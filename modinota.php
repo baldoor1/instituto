@@ -7,22 +7,23 @@
    <title>PHP</title>
 </head>
 <body>
-   <header><h1>Recibe Datos</h1></header>
+   <header></header>
    <section>
        <article>
-           <h2>Datos:</h2>
              <?php
-               $rut_alum = $_POST["rut_alum"];
                $id_nota = $_POST["id_nota"];
-               $nom_alum = $_POST["nom_alum"];
                $id_carre = $_POST["id_carre"];
+               $id_asig = $_POST["id_asig"];
+               $nota1 = $_POST["nota1"];
+               $nota2 = $_POST["nota2"];
+               $nota3 = $_POST["nota3"];
+               $nota4 = $_POST["nota4"];
+
                
-              
            ?> 
        </article>
 
        <article>
-           <h2>Conexion</h2>
            <?php
                $servidor = "localhost";
                $usuario = "root";
@@ -38,16 +39,14 @@
                echo "Conexion Realizada con exito!";
            ?>
        </article>
- 
+
        <article>
-           <h2>Ingresar Datos:</h2>
            <?php
-               
-               $sql = "update alumnos set id_nota = $id_nota, nom_alum = '$nom_alum', id_carre = $id_carre where rut_alum = '$rut_alum'";
+               $sql = "update notas set id_carre = $id_carre, id_asig = $id_asig, nota1 = $nota1, nota2 = $nota2, nota3 = $nota3, nota4 = $nota4 where id_nota = $id_nota";
                /* Se realiza el ingreso [query($sql)] y se comprueba
                 si esta correcto */
                if ($conexion -> query($sql) == TRUE) {
-                   echo "Datos actualizados con exito!";
+                   echo "<h1>Datos ingresados con exito!</h1>";
                }else{
                    echo "ERROR: " . $sql. " ".$conexion -> connect_error;
                }
