@@ -7,22 +7,19 @@
    <title>PHP</title>
 </head>
 <body>
-   <header><h1>Recibe Datos</h1></header>
+   <header></header>
    <section>
        <article>
-           <h2>Datos:</h2>
              <?php
-               $rut_alum = $_POST["rut_alum"];
-               $id_nota = $_POST["id_nota"];
-               $nom_alum = $_POST["nom_alum"];
+               $id_asig = $_POST["id_asig"];
+               $nom_asig = $_POST["nom_asig"];
                $id_carre = $_POST["id_carre"];
+               $descripcion = $_POST["descripcion"];
                
-              
            ?> 
        </article>
 
        <article>
-           <h2>Conexion</h2>
            <?php
                $servidor = "localhost";
                $usuario = "root";
@@ -38,16 +35,14 @@
                echo "Conexion Realizada con exito!";
            ?>
        </article>
- 
+
        <article>
-           <h2>Ingresar Datos:</h2>
            <?php
-               
-               $sql = "update alumnos set id_nota = $id_nota, nom_alum = '$nom_alum', id_carre = $id_carre where rut_alum = '$rut_alum'";
+               $sql = "update asignaturas set nom_asig = '$nom_asig', id_carre = $id_carre, descripcion = '$descripcion' where id_asig = '$id_asig'";
                /* Se realiza el ingreso [query($sql)] y se comprueba
                 si esta correcto */
                if ($conexion -> query($sql) == TRUE) {
-                   echo "Datos actualizados con exito!";
+                   echo "<h1>Datos actualizados con exito!</h1>";
                }else{
                    echo "ERROR: " . $sql. " ".$conexion -> connect_error;
                }
