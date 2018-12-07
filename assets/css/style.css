@@ -158,6 +158,24 @@ section{
 	left: 0;
 	top: 0;
 }
+.bg-img2{
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+.bg-img2 div{
+	z-index: 1;
+	position: relative;
+}
+.bg-img2:after{
+	position: absolute;
+	content: '';
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	left: 0;
+	top: 0;
+}
 
 .section{
 	padding: 100px 0;
@@ -369,6 +387,13 @@ section{
 	min-height: 900px;
 }
 
+.header2{
+	background-image: url(../images/1.jpg);
+	height: 50vh;
+	position: relative;
+	min-height: 665px;
+}
+
 .intro-box{
 	height: 50vh;
 	display: table;
@@ -417,6 +442,27 @@ section{
 	color: #fff;
 }
 .header1 .ubutia-btn:hover{
+	background-color: #fff;
+	color: #424242;
+}
+
+.header2 h1{
+	margin: 0;
+}
+.header2 h1, .header2 p{
+	color: #fff;
+	letter-spacing: 2px;
+}
+.header2 p{
+	font-size: 32px;
+	padding-top: 0;
+	padding-bottom: 40px;
+}
+.header2 .ubutia-btn{
+	border-color: #fff;
+	color: #fff;
+}
+.header2 .ubutia-btn:hover{
 	background-color: #fff;
 	color: #424242;
 }
