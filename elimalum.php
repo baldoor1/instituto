@@ -12,22 +12,11 @@
        <article>
            <h2>Datos:</h2>
              <?php
-               $id_nota = $_POST["id_nota"];
-               $id_carre = $_POST["id_carre"];
-               $id_asig = $_POST["id_asig"];
-               $nota1 = $_POST["nota1"];
-               $nota2 = $_POST["nota2"];
-               $nota3 = $_POST["nota3"];
-               $nota4 = $_POST["nota4"];
-
+               $rut_alum = $_POST["rut_alum"];
+            
+               echo "rut:  $rut_alum <br>";
+              
                
-               echo "id nota:  $id_nota <br>";
-               echo "id carrera:  $id_carre <br>";
-               echo "id asignatura:  $id_asig <br>";
-               echo "nota 1:  $nota1 <br>";
-               echo "nota 2:  $nota2 <br>";
-               echo "nota 3:  $nota3 <br>";
-               echo "nota 4:  $nota4 <br>";
            ?> 
        </article>
 
@@ -48,15 +37,16 @@
                echo "Conexion Realizada con exito!";
            ?>
        </article>
-
+ 
        <article>
            <h2>Ingresar Datos:</h2>
            <?php
-               $sql = "insert into notas (id_nota, id_carre, id_asig, nota1, nota2, nota3, nota4) values($id_nota,$id_carre,$id_asig,$nota1,$nota2,$nota3,$nota4);";
-               /* Se realiza el ingreso [query($sql)] y se comprueba
+               
+               $sql = "delete from alumnos where rut_alum = '$rut_alum';";
+             /* Se realiza el ingreso [query($sql)] y se comprueba
                 si esta correcto */
                if ($conexion -> query($sql) == TRUE) {
-                   echo "Datos ingresados con exito!";
+                   echo "Datos eliminados con exito!";
                }else{
                    echo "ERROR: " . $sql. " ".$conexion -> connect_error;
                }

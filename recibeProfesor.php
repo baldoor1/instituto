@@ -29,8 +29,8 @@
            <h2>Conexion</h2>
            <?php
                $servidor = "localhost";
-               $usuario = "admin";
-               $pass = "root";
+               $usuario = "root";
+               $pass = "";
                #Nombre de la BD
                $nombreBD = "instituto";
                #se crea la conexion
