@@ -66,31 +66,31 @@ section{
 .form-control option{
 	color: #424242;
 }
-.form-control{
+.form-control .form{
 	border-radius: 0;
 	padding: 25px;
     font-size: 18px;
     font-style: italic;
-    background-color: transparent;
-    color: #424242;
+    background-color: #000000;
+    color: #ffffff;
     margin-bottom: 30px;
-	border-color: #51c2b9;
+	border-color: #df9409;
 }
-.form-control:focus{
-	border-color: #51c2b9;
-	box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(81, 194, 185, 0.6);
+.form-control:focus .form{
+	border-color: #df9409;
+	box-shadow: inset 0 1px 1px rgb(255, 255, 255),0 0 8px rgba(81, 194, 185, 0.6);
 }
 .form-control::-webkit-input-placeholder {
-    color: #fff;
+    color: #000000;
 }
 .form-control:-moz-placeholder { /* Firefox 18- */
-    color: #fff;  
+    color: #000000;  
 }
 .form-control::-moz-placeholder {  /* Firefox 19+ */
-    color: #fff;  
+    color: #000000;  
 }
 .form-control:-ms-input-placeholder {  
-    color: #fff;  
+    color: #000000;  
 }
 
 .element .form-control::-webkit-input-placeholder {
@@ -315,6 +315,9 @@ section{
 }
 .hide-menu{
 	margin-top: -265px;
+}
+.hide-menu1{
+	margin-top: -53px;
 }
 .show-menu{
 	margin-top: 0;
