@@ -12,16 +12,22 @@
        <article>
            <h2>Datos:</h2>
              <?php
-               $rut_alum = $_POST["rut_alum"];
                $id_nota = $_POST["id_nota"];
-               $nom_alum = $_POST["nom_alum"];
                $id_carre = $_POST["id_carre"];
+               $id_asig = $_POST["id_asig"];
+               $nota1 = $_POST["nota1"];
+               $nota2 = $_POST["nota2"];
+               $nota3 = $_POST["nota3"];
+               $nota4 = $_POST["nota4"];
+
                
-               echo "rut:  $rut_alum <br>";
                echo "id nota:  $id_nota <br>";
-               echo "nombre alumno:  $nom_alum <br>";
-               echo "id carrera:  $id_carre <br>"; 
-               
+               echo "id carrera:  $id_carre <br>";
+               echo "id asignatura:  $id_asig <br>";
+               echo "nota 1:  $nota1 <br>";
+               echo "nota 2:  $nota2 <br>";
+               echo "nota 3:  $nota3 <br>";
+               echo "nota 4:  $nota4 <br>";
            ?> 
        </article>
 
@@ -46,7 +52,7 @@
        <article>
            <h2>Ingresar Datos:</h2>
            <?php
-               $sql = "insert into alumnos (rut_alum, id_nota, nom_alum, id_carre) values('$rut_alum',$id_nota,'$nom_alum',$id_carre);";
+               $sql = "insert into notas (id_nota, id_carre, id_asig, nota1, nota2, nota3, nota4) values($id_nota,$id_carre,$id_asig,$nota1,$nota2,$nota3,$nota4);";
                /* Se realiza el ingreso [query($sql)] y se comprueba
                 si esta correcto */
                if ($conexion -> query($sql) == TRUE) {

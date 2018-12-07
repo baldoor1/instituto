@@ -12,15 +12,15 @@
        <article>
            <h2>Datos:</h2>
              <?php
-               $rut_alum = $_POST["rut_alum"];
-               $id_nota = $_POST["id_nota"];
-               $nom_alum = $_POST["nom_alum"];
+               $id_asig = $_POST["id_asig"];
+               $nom_asig = $_POST["nom_asig"];
                $id_carre = $_POST["id_carre"];
+               $descripcion = $_POST["descripcion"];
                
-               echo "rut:  $rut_alum <br>";
-               echo "id nota:  $id_nota <br>";
-               echo "nombre alumno:  $nom_alum <br>";
-               echo "id carrera:  $id_carre <br>"; 
+               echo "id asignatura:  $id_asig <br>";
+               echo "nombre asignatura:  $nom_asig <br>";
+               echo "id carrera:  $id_carre <br>";
+               echo "descripcion:  $descripcion <br>"; 
                
            ?> 
        </article>
@@ -46,7 +46,7 @@
        <article>
            <h2>Ingresar Datos:</h2>
            <?php
-               $sql = "insert into alumnos (rut_alum, id_nota, nom_alum, id_carre) values('$rut_alum',$id_nota,'$nom_alum',$id_carre);";
+               $sql = "insert into asignaturas (id_asig, nom_asig, id_carre, descripcion) values($id_asig,'$nom_asig',$id_carre,'$descripcion');";
                /* Se realiza el ingreso [query($sql)] y se comprueba
                 si esta correcto */
                if ($conexion -> query($sql) == TRUE) {
