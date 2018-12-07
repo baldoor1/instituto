@@ -24,8 +24,8 @@
            <h2>Conexion</h2>
            <?php
                $servidor = "localhost";
-               $usuario = "root";
-               $pass = "";
+               $usuario = "admin";
+               $pass = "root";
                #Nombre de la BD
                $nombreBD = "instituto";
                #se crea la conexion
@@ -56,7 +56,7 @@
        </article>
 
        <article>
-           <button><a href="insertar.html">Volver</a></button>
+           <button><a href="bd.html">Volver</a></button>
        </article>
                
    </section>

@@ -62,7 +62,7 @@
        </article>
 
        <article>
-           <button><a href="insertar.html">Volver</a></button>
+           <button><a href="bd.html">Volver</a></button>
        </article>
                
    </section>
