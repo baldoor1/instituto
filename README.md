@@ -1,5 +1,12 @@
-# uButia
-uButia is a free bootstrap template created by freshdesignweb teams. The template includes the complete source files for download such as HTML5, CSS, CSS3 and JavaScript for easy customization. 
-# Theme Demo
-<img src="https://github.com/grahambill/ubutia/blob/master/ubutia.jpg?raw=true">
-<a href="https://www.freshdesignweb.com/demo/ubutia/">View Demo</a> <a href="https://github.com/grahambill/ubutia/archive/master.zip">Download</a>
+<h1>Instituto</h1>
+Nuestra pagina web trata sobre el tema educacional, que en este caso es un instituto profesional llamado Galaxia,
+el cual muestra información relacionada al instituto y su respectiva base de datos, la cual se puede manipular para revisar toda la información actual del instituto.<br><br>
+
+
+<h3>Diseño utilizado</h3>
+<br>
+Imagen de la plantilla original con la modificada
+<img src="assets/images/plantilla.png">
+
+
+
