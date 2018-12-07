@@ -59,30 +59,33 @@
                     <div class="row"><br><br><br><br><br><br><br>
                         <div class="intro-box">
                             <div class="intro">
-                                
-                                <h1>Ingrese Datos</h1> <br><br>
-                                <form class="form" action="recibeAsignatura.php" method="POST">
+                              
+                                <h2 color="white"><font color="white"> Ingrese rut del alumno que desea modificar</font></h2> <br><br>
+                                <form action="modialum.php" method="POST">
 
-                                    <div class="form-group">
-                                   <input type="text" class="form-control" id="exampleInputEmail1" name="id_asig" placeholder="ingrese la id de asignatura"><br>
-                                    </div>
-                        
-                                    <div class="form-group">
-                                   <input type="text" class="form-control" id="exampleInputEmail1" name="nom_asig" placeholder="ingrese nombre asignatura"><br>
-                                    </div>
-                        
-                                    <div class="form-group">
-                                   <input type="text" class="form-control" id="exampleInputEmail1" name="id_carre" placeholder="ingrese la id de carrera"><br>
-                                    </div>
-                        
-                                    <div class="form-group">
-                                   <input type="text" class="form-control" id="exampleInputEmail1" name="descripcion" placeholder="ingrese descripcion"><br>
-                                    </div>
-                                    
-                                   <button class="btn ubutia-btn solid mr60" type="submit">Enviar</button>
-                                   <button class="btn ubutia-btn solid mr60" type="reset">Limpiar</button>
-                                  
-                                   </form>
+                                        <div class="form-group">
+                                       <input type="text" class="form-control" id="exampleInputEmail1" name="rut_alum" placeholder="ingrese rut"><br>
+                                        </div><br><br>
+                            
+                                        <h2 color="white"><font color="white"> Ingrese todos los campos nuevos</font></h2> <br><br>
+
+
+                                        <div class="form-group">
+                                       <input type="text" class="form-control" id="exampleInputEmail1" name="id_nota" placeholder="ingrese nueva id de notas"><br>
+                                        </div>
+                            
+                                        <div class="form-group">
+                                       <input type="text" class="form-control" id="exampleInputEmail1" name="nom_alum" placeholder="ingrese nuevo nombre"><br>
+                                        </div>
+                            
+                                        <div class="form-group">
+                                       <input type="text" class="form-control" id="exampleInputEmail1" name="id_carre" placeholder="ingrese nueva id de carrera"><br>
+                                        </div>
+                                        
+                                       <button class="btn ubutia-btn solid mr60" type="submit">Enviar</button>
+                                       <button class="btn ubutia-btn solid mr60" type="reset">Limpiar</button>
+                                      
+                                       </form>
 
                             </div>
                         </div>
